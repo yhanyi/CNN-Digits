@@ -1,0 +1,151 @@
+* {
+    color: #000000;
+    text-align: center;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.main {
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn-wrapper a {
+    border-radius: 50%;
+}
+
+.btn {
+    border: 1px solid black;
+    transition: 0.1s ease-in-out;
+    width: 100px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1);
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.inner-container-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.inner-container-2 {
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+    width: 400px;
+}
+
+#results {
+    border: 1px solid black;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+#predictions {
+    color: #000000;
+    height: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+#charts {
+    border-radius: 5px;
+    height: 50px;
+    padding: 20px;
+    width: 50px;
+}
+
+#github-btn {
+    align-items: center;
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px rgba(100, 100, 100, 0.253);
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.3s;
+    width: 50px;
+}
+  
+#github-btn .svgIcon {
+    transition-duration: 0.3s;
+    width: 30px;
+}
+  
+#github-btn .svgIcon path {
+    fill: white;
+}
+  
+#github-btn:hover {
+    align-items: center;
+    background-color: rgb(0, 255, 200);
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    width: 100px;
+}
+  
+#github-btn:hover .svgIcon {
+    transform: translateY(-200%);
+    transition-duration: 0.3s;
+}
+  
+#github-btn::before {
+    bottom: -20px;
+    color: #000000;
+    content: "Github";
+    font-size: 0px;
+    position: absolute;
+}
+  
+#github-btn:hover::before {
+    bottom: unset;
+    font-size: 13px;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+}
