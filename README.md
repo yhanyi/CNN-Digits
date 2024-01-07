@@ -1,6 +1,6 @@
-# CNN-Digits
+# CNNDigits
 
-https://yhanyi.github.io/cnn-digits/
+https://yhanyi.github.io/CNNDigits/
 
 A simple webapp importing a basic Tensorflow CNN I trained on the popular MNIST handwritten digits dataset with a 99.2% accuracy.
 
